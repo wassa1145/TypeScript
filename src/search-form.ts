@@ -6,7 +6,7 @@ export function renderSearchFormBlock(dateFrom: string, dateTo: string) {
   renderBlock(
     'search-form-block',
     `
-    <form>
+    <form id="search-form">
       <fieldset class="search-filedset">
         <div class="row">
           <div>
@@ -30,7 +30,7 @@ export function renderSearchFormBlock(dateFrom: string, dateTo: string) {
           </div>
           <div>
             <label for="max-price">Макс. цена суток</label>
-            <input id="max-price" type="text" value="" name="price" class="max-price" />
+            <input id="max-price" type="text" value="maxPrice" name="price" class="max-price" />
           </div>
           <div>
             <div><button>Найти</button></div>
